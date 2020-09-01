@@ -31,7 +31,7 @@ begin
     k1_R = Power_on_Reset;
     k2_S = Power_on_Reset;
     k1_S = w[0];
-    k2_S = w[2]';
+    k2_S = ~w[2];
 end
 
 
