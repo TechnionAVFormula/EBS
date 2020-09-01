@@ -1,4 +1,4 @@
-module SDC(
+module newSDC(
     output logic To_SDC_relais,
     output logic SDC_is_Ready,
     input logic AS_close_SDC,
