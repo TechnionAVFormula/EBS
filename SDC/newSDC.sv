@@ -7,7 +7,7 @@ module SDC(
     input logic TS_Activation_Button_external,
     input logic Watchdog,
     input logic Shutdown_circuit,
-    input logic Power-on-Reset
+    input logic Power_on_Reset
 );
 
 
@@ -28,8 +28,8 @@ begin
     W[0] = AS_close_SDC & Activation;
     w[1] = Watchdog & Shutdown_circuit;
     w[2] = (k1_Q | w[1]);
-    k1_R = Power-on-Reset;
-    k2_S = Power-on-Reset;
+    k1_R = Power_on_Reset;
+    k2_S = Power_on_Reset;
     k1_S = w[0];
     k2_S = w[2]';
 end
