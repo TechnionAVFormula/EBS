@@ -25,7 +25,7 @@ always_comb
 begin
     Activation = (AS_driving_mode == 1'b1) ? TS_Activation_Button_external :
                 TS_Activation_Button_cockpit;
-    W[0] = AS_close_SDC & Activation;
+    w[0] = AS_close_SDC & Activation;
     w[1] = Watchdog & Shutdown_circuit;
     w[2] = (k1_Q | w[1]);
     k1_R = Power_on_Reset;
@@ -50,7 +50,8 @@ end
 always_comb
 begin
     To_SDC_relais = k1_Q & k2_Q;
-    SDC_is_ready = k2_Q & w[1];
+    SDC_is_Ready = k2_Q & w[1];
 end
 
 
+endmodule

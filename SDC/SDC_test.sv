@@ -13,7 +13,7 @@ logic SDCready;
 newSDC uut (TO_SDC_relais(SDCrelais), .SDC_is_Ready(SDCready),
  .AS_close_SDC(SDC_close), .AS_driving_mode(driving_mode),
  .TS_Activation_Button_cockpit(manual_ignition), .TS_Activation_Button_external(Auto_ignition),
- .Power-on-Reset(PowerOnreset), .Watchdog(WatchdogOutput), .Shutdown_circuit(Shutdown));
+ .Power_on_Reset(PowerOnreset), .Watchdog(WatchdogOutput), .Shutdown_circuit(Shutdown));
 
  initial begin
      //sets all to zero as the car and all its systems are turnedoff
